@@ -1,0 +1,193 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    overflow: hidden;
+}
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.navbar{
+    position : fixed;
+    width: 200px;
+    height: 100%;
+    background-color:chocolate ;
+    border-left: 10px solid chocolate; 
+    transition: 0,5s;
+    overflow: hidden;
+
+}
+
+.navbar.active{
+    width:0;
+    border-left: none;
+}
+
+
+.navbar ul {
+    list-style-type: none; 
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+
+}
+
+.navbar ul li :hover,
+.navbar ul li .hovered {
+    background-color: white;
+    color: chocolate;
+}
+
+.navbar ul li:nth-child(1){
+    margin-bottom: 40px;
+    pointer-events:none ;
+    font-size: 25px;
+
+}
+
+.navbar ul li a {
+    position: relative;
+    color: black; 
+    display: flex;
+    text-decoration: none; 
+    display: block; 
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 0px 15px;
+    
+}
+
+
+.navbar ul li :hover ::before,
+.navbar ul li .hovered ::before {
+    content:"";
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background-color:transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px white;
+    pointer-events: none;
+}
+
+.navbar ul li :hover ::after,
+.navbar ul li .hovered ::after {
+    content:"";
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background-color:transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px white;
+    pointer-events: none;
+}
+
+.main{
+    position: absolute;
+    width: calc(100% - 200px);
+    left: 200px;
+    height: 5rem;
+    background:chocolate ;
+    transition: 0,5s;
+}
+
+.main.active{
+    width: calc(100% - 0px);
+    left: 0px;
+}
+
+.gauche{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2,5rem;
+    padding: 0 10px;
+}
+
+.bicon i {
+    font-size: 2,5rem;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+
+}
+
+.lesicons{
+    font-size: 2,5rem;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cardbox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:30px;
+}
+
+.cardbox .card{
+    position: relative;
+    background:whitesmoke;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0);
+}
+
+.cardbox .card .img{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cardbox .card .img img{
+    position: absolute;
+    width: 100%;
+}
+
+

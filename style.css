@@ -188,6 +188,77 @@ body{
 .cardbox .card .img img{
     position: absolute;
     width: 100%;
+} 
+button{
+    border-style: none;
+    align-items: center;
+    width: 10rem;
+    height: 3rem;
+    background-color:chocolate ;
+    color: white;
+    margin-left: 2rem;
+    cursor: pointer;
+
 }
+
+
+
+.btnpp {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(231, 163, 99, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulaire {
+    background-color: #f76c5e;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    width: 400px; 
+}
+
+.formulaire div {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; 
+    font-weight: bold;
+}
+
+.formulaire label {
+    display: block; 
+    margin: 10px 0 5px; 
+    font-size: 16px; 
+}
+
+.formulaire input[type="text"],
+.formulaire input[type="file"] {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: none; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.formulaire button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+
+.formulaire button:hover {
+    background-color: #45a049; 
+}
+
 
 

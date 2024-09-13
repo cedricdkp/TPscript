@@ -72,7 +72,7 @@
                 </div>
             </div>
         </div>
-        <div class="cardbox">
+        <div class="cardbox" id="cardbox">
             <div class="card">
                 <div  class="img">
                     <img src="asset/content-attractive-black-with-keeping-arms-crossed-outdoors.jpg" alt="">
@@ -110,7 +110,24 @@
                 </div>
             </div>
         </div>
+        <div class="zoneutilisateur">
+            <button id="btnj"> Ajouter un Utilisateur</button>
+        </div>
     </div>
-    
+    <div class="btnpp">
+        <div class="formulaire">
+            <div> Ajouter un Utilisateur</div>
+            <form id="userForm">
+                <label for="nom">Votre Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre Nom" required>
+                <label for="profession">Votre Proffession</label>
+                <input type="text" id="profession" name="profession" placeholder="Votre Profession" required>
+                <label for="image">Telecharger une image</label>
+                <input type="file" id="image" name="image" accept="image /*" required>
+                <button id="btnajouterutilisateur"> Ajouter</button>
+            </form>
+        </div>
+    </div> 
+
 </body>
 </html>
